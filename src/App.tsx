@@ -1,4 +1,7 @@
 import Nav from "./components/Nav.tsx"
+import { DiJavascript, DiCss3, DiHtml5, DiReact, DiGit } from "react-icons/di"
+import { SiNextdotjs, SiCplusplus, SiPython } from "react-icons/si"
+import { TbBrandCSharp } from "react-icons/tb";
 
 function App() {
 
@@ -16,6 +19,7 @@ function App() {
           <div className="two-column-layout-right">
             <img src="keyboard.png" alt="screenshot of coding" className="triple-shadow" />
             <div className="sectionbody">
+              <h3>"Self-taught" developer for the last 10 years who discovered the joy and challenges of Web Development 2 years ago.</h3>
               <ul>
                 <li>Comfortable using <b>Next.js</b>, <b>React</b>, and <b>JavaScript</b>/<b>HTML</b>/<b>CSS</b>, but down to learn any stack :D</li>
                 <li>Always excited to take on challenging projects that help me push my skills further.</li>
@@ -30,19 +34,20 @@ function App() {
             <div className="sectionbody">
               <h3>Technologies I use daily for web development</h3>
               <ul>
-                <li>Next.js</li>
-                <li>React</li>
-                <li>Javascript</li>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li><SiNextdotjs /> Next.js</li>
+                <li><DiReact /> React</li>
+                <li><DiJavascript /> Javascript</li>
+                <li><DiHtml5 /> HTML</li>
+                <li><DiCss3 />CSS</li>
+                <li><DiGit />Git</li>
               </ul>
             </div>
             <div className="sectionbody">
               <h3>Ones I use less often for other stuff</h3>
               <ul>
-                <li>C#</li>
-                <li>Python</li>
-                <li>C++</li>
+                <li><TbBrandCSharp /> C#</li>
+                <li><SiPython /> Python</li>
+                <li><SiCplusplus /> C++</li>
               </ul>
             </div>
           </div>
@@ -50,7 +55,16 @@ function App() {
         <section id="projects">
           <h1>Projects</h1>
           <div className="sectionbody">
-
+            <div className="two-column-layout">
+              <div className="projectcard">
+                <h3>BendiTrivia</h3>
+                <p>A trivia-hosting platform with user authentication, session-based rate limiting, and a moderation system.</p>
+              </div>
+              <div className="projectcard">
+                <h3>Pateo</h3>
+                <p>A frontend designed to search for U.S. patents powered by the PatentsView API</p>
+              </div>
+            </div>
           </div>
         </section>
         <section id="contactme">
