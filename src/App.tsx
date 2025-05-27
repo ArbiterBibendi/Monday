@@ -58,11 +58,13 @@ function App() {
             <div className="two-column-layout">
               <div className="projectcard">
                 <h3>BendiTrivia</h3>
-                <p>A trivia-hosting platform with user authentication, session-based rate limiting, and a moderation system.</p>
+                <p>A trivia-hosting platform with user authentication, session-based rate limiting, and a moderation system.
+                  Uses Next.js, PostgreSQL, LuciaAuth, and Redis.
+                </p>
               </div>
               <div className="projectcard">
                 <h3>Pateo</h3>
-                <p>A frontend designed to search for U.S. patents powered by the PatentsView API</p>
+                <p>A frontend designed to search for U.S. patents powered by the PatentsView API and React</p>
               </div>
             </div>
           </div>
