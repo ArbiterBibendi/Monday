@@ -251,7 +251,7 @@ section {
 }
 
 .cta {
-  transition: background-color 0.5s, color 0.5s, filter 0.3s;
+  transition: background-color 0.5s, color 0.5s, filter 0.5s;
   background-color: var(--color2);
   color: black;
 }
@@ -329,7 +329,7 @@ nav {
   a:hover {
     background-color: var(--color2);
     filter: drop-shadow(0px 0px 5px var(--color2));
-    animation: hoverfade 0.25s forwards;
+    animation: hoverfade 0.3s forwards ease-in;
     cursor: grab;
   }
 }
