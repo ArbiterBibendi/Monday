@@ -110,11 +110,14 @@ input[type=submit] {
   font-size: large;
   border-radius: 1em;
   padding: 1em;
+}
+
+.cta {
   transition: background-color 0.5s, color 0.5s, filter 0.3s;
 }
 
-input[type=submit]:hover,
-input[type=submit]:focus {
+.cta:hover,
+.cta:focus {
   background-color: aqua;
   cursor: grab;
   color: black;

@@ -81,7 +81,7 @@ function App() {
 
               <label htmlFor="fmessage">Message:</label>
               <textarea id="fmessage" name="fmessage"/>
-              <input type="submit" value="Send"/>
+              <input type="submit" value="Send" className="cta"/>
             </form>
           </div>
         </section>
