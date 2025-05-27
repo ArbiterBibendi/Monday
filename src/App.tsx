@@ -102,21 +102,37 @@ function App() {
           <div className="sectionbody">
             <div className="two-column-layout">
               <div className="projectcard">
+                <div>
+
                 <h3>BendiTrivia</h3>
                 <p>A trivia-hosting platform with user authentication, session-based rate limiting, and a moderation system.</p><br/>
                 <p>Uses Next.js, PostgreSQL, LuciaAuth, and Redis.</p>
+                </div>
+                <img src="benditrivia.png" alt="screenshot of benditrivia" />
               </div>
               <div className="projectcard">
+                <div>
                 <h3>Pateo</h3>
                 <p>A frontend designed to search for U.S. patents powered by the PatentsView API and React.</p>
+                </div>
+                <img src="pateo.png" alt="screenshot of pateo" />
               </div>
               <div className="projectcard">
+                <div>
                 <h3>AEIOUCompany</h3>
-                <p>A game modification which implements Text-to-Speech into game chat.</p>
+                <p>A mod for Lethal Company which implements Text-to-Speech into game chat.</p> <br/>
+                <p>Written in C# and uses HarmonyX for function hooking</p> <br/>
+                <p><b><i>540,000+</i></b> Downloads</p>
+                </div>
+                <img src="aeioucompany.png" alt="screenshot of aeioucompany page on thunderstore" />
               </div>
               <div className="projectcard">
+                <div>
                 <h3>Stalcraft Notifier</h3>
-                <p>A discord bot which notifies users of marketplace activity in Stalcraft.</p>
+                <p>A discord bot which which assists users with marketplace activity in Stalcraft.</p> <br/>
+                <p>Written in Javascript</p>
+                </div>
+                <img src="stalcraftnotifier.png" alt="screenshot of the stalcraft notifier on discrd" />
               </div>
             </div>
           </div>
