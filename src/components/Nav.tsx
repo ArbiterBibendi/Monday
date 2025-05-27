@@ -1,7 +1,7 @@
 function Nav(): React.JSX.Element {
 	return (
 		<nav>
-			<img src="drake.gif"></img>
+			<img src="bendi.webp"></img>
 			<div>
 				<a href="#about">About</a>
 				<a href="#skills">Skills</a>
