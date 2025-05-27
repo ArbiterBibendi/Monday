@@ -1,10 +1,55 @@
+import { useRef, useState } from "react";
 import Nav from "./components/Nav.tsx"
 import { DiJavascript, DiCss3, DiHtml5, DiReact, DiGit } from "react-icons/di"
 import { SiNextdotjs, SiCplusplus, SiPython } from "react-icons/si"
 import { TbBrandCSharp } from "react-icons/tb";
 
 function App() {
-
+  const form = useRef<HTMLFormElement>(null);
+  const formStatus = useRef<HTMLParagraphElement>(null);
+  const formSectionBody = useRef<HTMLDivElement>(null);
+  const [inputDisabled, setButtonDisabled] = useState(false);
+  const submitForm = (e) => {
+    if (form.current === null) {
+      form.current = new HTMLFormElement();
+    }
+    e.preventDefault();
+    const formData = new FormData(form.current);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+    
+    if (!form.current?.checkValidity() && formSectionBody.current !== null) {
+        formSectionBody.current.style = "border-color: red";
+        return;
+    }
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: json
+    })
+    .then(response => {
+      if (!formSectionBody.current) {
+        formSectionBody.current = new HTMLDivElement();
+      }
+      if (response.status == 200) {
+        formSectionBody.current.style = "border-color: lime";
+        setButtonDisabled(true);
+      }
+      else {
+        formSectionBody.current.style = "border-color: red";
+      }
+      return response.json();
+    })
+    .then(responseJson => {
+      if (!formStatus.current) {
+        return;
+      }
+      formStatus.current.innerText = responseJson.message;
+    })
+  }
   return (
     <>
       <Nav />
@@ -78,17 +123,21 @@ function App() {
         </section>
         <section id="contactme">
           <h1>Contact Me</h1>
-          <div className="sectionbody">
-            <form>
+          <div className="sectionbody" ref={formSectionBody}>
+            <form ref={form}>
+            <input type="hidden" name="access_key" value="5f7c3879-9bc7-4bf7-ada4-2e84fb49cbe8" />
               <label htmlFor="fname">Your name:</label>
-              <input type="text" id="fname" name="fname" />
+              <input type="text" id="fname" name="fname" disabled={inputDisabled} required />
 
               <label htmlFor="femail">Email:</label>
-              <input type="text" id="femail" name="femail" />
+              <input type="text" id="femail" name="femail" disabled={inputDisabled} required />
 
               <label htmlFor="fmessage">Message:</label>
-              <textarea id="fmessage" name="fmessage" />
-              <input type="submit" value="Send" className="cta" />
+              <textarea id="fmessage" name="fmessage" disabled={inputDisabled} required />
+              <div>
+                <p ref={formStatus}></p>
+                <input type="submit" value="Send" className="cta" onClick={submitForm} disabled={inputDisabled}/>
+              </div>
             </form>
           </div>
         </section>

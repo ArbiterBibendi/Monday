@@ -76,6 +76,18 @@
 form {
   font-weight: 600;
   line-height: 2em;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      max-width: 15em;
+      overflow: scroll;
+      color: lime;
+    }
+  }
+
 }
 
 input,
@@ -110,6 +122,13 @@ input[type=submit] {
   font-size: large;
   border-radius: 1em;
   padding: 1em;
+  display: inline;
+}
+
+input[type=submit]:disabled {
+  background-color: #190e4f;
+  cursor: default;
+  filter: none;
 }
 
 
