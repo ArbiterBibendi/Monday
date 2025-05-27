@@ -69,7 +69,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5em;
 }
 
 form {
@@ -119,7 +118,6 @@ textarea:focus {
 
 section {
   min-height: 100vh;
-  min-width: 80vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +127,6 @@ section {
 .sectionbody {
   line-height: 1.5em;
   min-width: 50%;
-  min-height: 50%;
   max-width: 75%;
   border: var(--color2) 1px solid;
   border-radius: 1em;
