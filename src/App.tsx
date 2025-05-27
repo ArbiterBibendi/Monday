@@ -58,13 +58,20 @@ function App() {
             <div className="two-column-layout">
               <div className="projectcard">
                 <h3>BendiTrivia</h3>
-                <p>A trivia-hosting platform with user authentication, session-based rate limiting, and a moderation system.
-                  Uses Next.js, PostgreSQL, LuciaAuth, and Redis.
-                </p>
+                <p>A trivia-hosting platform with user authentication, session-based rate limiting, and a moderation system.</p><br/>
+                <p>Uses Next.js, PostgreSQL, LuciaAuth, and Redis.</p>
               </div>
               <div className="projectcard">
                 <h3>Pateo</h3>
-                <p>A frontend designed to search for U.S. patents powered by the PatentsView API and React</p>
+                <p>A frontend designed to search for U.S. patents powered by the PatentsView API and React.</p>
+              </div>
+              <div className="projectcard">
+                <h3>AEIOUCompany</h3>
+                <p>A game modification which implements Text-to-Speech into game chat.</p>
+              </div>
+              <div className="projectcard">
+                <h3>Stalcraft Notifier</h3>
+                <p>A discord bot which notifies users of marketplace activity in Stalcraft.</p>
               </div>
             </div>
           </div>
@@ -74,14 +81,14 @@ function App() {
           <div className="sectionbody">
             <form>
               <label htmlFor="fname">Your name:</label>
-              <input type="text" id="fname" name="fname"/>
+              <input type="text" id="fname" name="fname" />
 
               <label htmlFor="femail">Email:</label>
-              <input type="text" id="femail" name="femail"/>
+              <input type="text" id="femail" name="femail" />
 
               <label htmlFor="fmessage">Message:</label>
-              <textarea id="fmessage" name="fmessage"/>
-              <input type="submit" value="Send" className="cta"/>
+              <textarea id="fmessage" name="fmessage" />
+              <input type="submit" value="Send" className="cta" />
             </form>
           </div>
         </section>

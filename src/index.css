@@ -151,6 +151,7 @@ section {
   padding: 1em;
   background-image: linear-gradient(var(--color1) -100%, black 160%);
   filter: drop-shadow(4px 4px 4px #0f0f0f);
+  margin: 1em !important;
 
 }
 
