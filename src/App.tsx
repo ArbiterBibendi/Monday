@@ -72,7 +72,17 @@ function App() {
         <section id="contactme">
           <h1>Contact Me</h1>
           <div className="sectionbody">
+            <form>
+              <label htmlFor="fname">Your name:</label>
+              <input type="text" id="fname" name="fname"/>
 
+              <label htmlFor="femail">Email:</label>
+              <input type="text" id="femail" name="femail"/>
+
+              <label htmlFor="fmessage">Message:</label>
+              <textarea id="fmessage" name="fmessage"/>
+              <input type="submit" value="Send"/>
+            </form>
           </div>
         </section>
       </div>
