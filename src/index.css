@@ -101,7 +101,6 @@ textarea {
 }
 
 input[type=submit] {
-  background-color: var(--color1);
   border: none;
   width: 7em;
   margin-left: auto;
@@ -111,17 +110,6 @@ input[type=submit] {
   padding: 1em;
 }
 
-.cta {
-  transition: background-color 0.5s, color 0.5s, filter 0.3s;
-}
-
-.cta:hover,
-.cta:focus {
-  background-color: aqua;
-  cursor: grab;
-  color: black;
-  filter: drop-shadow(1px 1px 5px aqua)
-}
 
 input:focus,
 textarea:focus {
@@ -193,15 +181,21 @@ section {
 }
 
 .triple-shadow {
-  filter: drop-shadow(15px -15px 10px var(--color3)) drop-shadow(-15px -15px 10px var(--color1)) drop-shadow(15px 15px 10px var(--color5));
+  filter: drop-shadow(1vw -1vw 5px var(--color3)) drop-shadow(-1vw -1vw 5px var(--color1)) drop-shadow(1vw 1vw 5px var(--color5));
 }
 
 .cta {
-  background-color: var(--color1);
+  transition: background-color 0.5s, color 0.5s, filter 0.3s;
+  background-color: var(--color2);
   color: black;
 }
 
-.cta:hover {
+.cta:hover,
+.cta:focus {
+  background-color: aqua;
+  cursor: grab;
+  color: black;
+  filter: drop-shadow(1px 1px 5px aqua);
   animation: none;
 }
 
@@ -210,7 +204,7 @@ h1 {
   filter: drop-shadow(5px 5px 10px var(--color3));
   text-shadow: 1px 1px black;
   margin-bottom: 0.4em;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 h2 {
@@ -310,6 +304,20 @@ nav {
   nav {
     justify-content: center;
   }
+
+  .two-column-layout,
+  .two-column-layout-left,
+  .two-column-layout-right {
+    grid-template-columns: 1fr;
+
+    * {
+      margin-top: 1em;
+    }
+  }
+
+  img {
+    max-width: 25% !important;
+  }
 }
 
 @media screen and (max-width: 411px) {
@@ -317,11 +325,5 @@ nav {
     padding-top: 0px;
     padding-bottom: 0px;
     font-size: 1em;
-  }
-
-  .two-column-layout,
-  .two-column-layout-left,
-  .two-column-layout-right {
-    grid-template-columns: 1fr;
   }
 }
