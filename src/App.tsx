@@ -9,7 +9,7 @@ function App() {
   const formStatus = useRef<HTMLParagraphElement>(null);
   const formSectionBody = useRef<HTMLDivElement>(null);
   const [inputDisabled, setButtonDisabled] = useState(false);
-  const submitForm = (e: SubmitEvent) => {
+  const submitForm = (e: React.MouseEvent) => {
     if (form.current === null) {
       form.current = new HTMLFormElement();
     }
