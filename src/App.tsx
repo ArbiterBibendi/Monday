@@ -108,14 +108,14 @@ function App() {
                 <p>A trivia-hosting platform with user authentication, session-based rate limiting, and a moderation system.</p><br/>
                 <p>Uses Next.js, PostgreSQL, LuciaAuth, and Redis.</p>
                 </div>
-                <img src="benditrivia.png" alt="screenshot of benditrivia" />
+                <img src="benditrivia2.png" alt="screenshot of benditrivia" />
               </div>
               <div className="projectcard">
                 <div>
                 <h3>Pateo</h3>
                 <p>A frontend designed to search for U.S. patents powered by the PatentsView API and React.</p>
                 </div>
-                <img src="pateo.png" alt="screenshot of pateo" />
+                <img src="pateo2.png" alt="screenshot of pateo" />
               </div>
               <div className="projectcard">
                 <div>
