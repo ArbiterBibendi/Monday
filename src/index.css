@@ -157,6 +157,11 @@ section {
   background-image: linear-gradient(var(--color3) -100%, black 160%);
   margin: 5em;
 
+  h3,
+  li {
+    margin: auto;
+  }
+
   li {
     transition: color 0.5s;
     font-size: larger;
@@ -195,9 +200,46 @@ section {
     overflow: hidden;
   }
 
-  div {
+  .desc {
     margin-top: 0px;
     margin-left: 1em;
+    margin-bottom: 0px !important;
+    height: 100%;
+
+    .hint {
+      color: #AAAAAA;
+      line-height: 1em;
+    }
+  }
+
+  .projectlinks {
+    margin-left: 0.5em;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+
+    a {
+      margin: none;
+      display: flex;
+      align-items: center;
+      width: 28px;
+      height: 28px;
+
+      path {
+        height: 100%;
+      }
+
+      #thunderstoreicon {
+        margin-top: 1.36px;
+      }
+    }
+
+    a:hover {
+      color: aqua;
+    }
   }
 
   img {
@@ -219,14 +261,10 @@ section {
 
 .projectcard:hover {
   filter: drop-shadow(8px 8px 8px #0f0f0f);
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-image: linear-gradient(var(--color2) -100%, black 160%);
 
   overflow: hidden;
-
-  img {
-    transform: scale(1.01);
-  }
 }
 
 .two-column-layout-left,
@@ -237,10 +275,11 @@ section {
   div {
     margin-top: 1em;
     margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   * {
-    margin: auto;
     max-width: 75%;
   }
 }
