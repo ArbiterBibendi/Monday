@@ -146,7 +146,7 @@ function App() {
                 <div className="desc">
                   <h3>Stalcraft Notifier</h3>
                   <p>A discord bot which which assists users with marketplace activity in Stalcraft.</p> <br />
-                  <p>Written in Javascript</p>
+                  <p>Uses Javascript, MongoDB, the Stalcraft API, and Discord.js</p>
                 </div>
                 <div className="projectlinks">
                   <a target="_blank" href="https://github.com/ArbiterBibendi/Stalcraft"><DiGithubBadge size={28} /></a>
