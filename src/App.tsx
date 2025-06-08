@@ -7,6 +7,9 @@ import { LuAppWindow } from "react-icons/lu";
 import { BsDiscord } from "react-icons/bs";
 
 function App() {
+
+  
+  console.log(`dev: ${import.meta.env.DEV}`);
   const form = useRef<HTMLFormElement>(null);
   const formStatus = useRef<HTMLParagraphElement>(null);
   const formSectionBody = useRef<HTMLDivElement>(null);
@@ -19,7 +22,7 @@ function App() {
     const formData = new FormData(form.current);
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
-
+    
     if (!form.current?.checkValidity() && formSectionBody.current !== null) {
       formSectionBody.current.style = "border-color: red";
       return;
@@ -32,9 +35,9 @@ function App() {
       },
       body: json
     })
-      .then(response => {
-        if (!formSectionBody.current) {
-          formSectionBody.current = new HTMLDivElement();
+    .then(response => {
+      if (!formSectionBody.current) {
+        formSectionBody.current = new HTMLDivElement();
         }
         if (response.status == 200) {
           formSectionBody.current.style = "border-color: lime";
@@ -51,9 +54,10 @@ function App() {
         }
         formStatus.current.innerText = responseJson.message;
       })
-  }
-  return (
-    <>
+    }
+    return (
+      <>
+      {import.meta.env.PROD && <script async src="https://bendianalyticsbackend.onrender.com/clientScript"></script>}
       <Nav />
       <div id="main">
         <section id="about">
