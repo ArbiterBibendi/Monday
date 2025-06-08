@@ -53,6 +53,9 @@
   background-color: black !important;
 }
 
+html {
+  font-size: smaller;
+}
 
 
 #root {
@@ -70,7 +73,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 1500px;
+  max-width: 1200px;
+
+  img {
+    max-width: 75%;
+  }
 }
 
 form {
@@ -144,6 +151,7 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 2em;
+  padding-top: 6em;
 }
 
 .sectionbody {
@@ -155,7 +163,7 @@ section {
   padding: 2em;
   box-shadow: var(--color3) 5px 5px 5px 0px;
   background-image: linear-gradient(var(--color3) -100%, black 160%);
-  margin: 5em;
+  margin-top: 2em;
 
   h3,
   li {
@@ -177,12 +185,12 @@ section {
   border-radius: 1em;
   background-image: linear-gradient(var(--color1) -100%, black 160%);
   filter: drop-shadow(4px 4px 4px #0f0f0f);
-
+  height: 100%;
   transition: all 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0.5em 0em 0em 0em;
+  padding: 0em;
 
   h3 {
     font-size: larger;
@@ -205,6 +213,8 @@ section {
     margin-left: 1em;
     margin-bottom: 0px !important;
     height: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
 
     .hint {
       color: #AAAAAA;
@@ -263,7 +273,6 @@ section {
   filter: drop-shadow(8px 8px 8px #0f0f0f);
   transform: scale(1.05);
   background-image: linear-gradient(var(--color2) -100%, black 160%);
-
   overflow: hidden;
 }
 
@@ -271,17 +280,9 @@ section {
 .two-column-layout-right,
 .two-column-layout {
   display: grid;
-
-  div {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  * {
-    max-width: 75%;
-  }
+  align-items: center;
+  justify-items: center;
+  gap: 2em;
 }
 
 .two-column-layout-right {
@@ -412,7 +413,8 @@ nav {
   }
 
   section {
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   nav {
@@ -429,6 +431,11 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    div {
+      margin-bottom: 0px;
+      width: 100%
+    }
   }
 
   img {
