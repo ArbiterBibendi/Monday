@@ -348,13 +348,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1em 0em 1em 0em;
+  box-shadow: 0px 0px 10px 5px var(--color4);
 
   position: fixed;
   top: 0px;
   z-index: 1;
   width: 100%;
 
-  animation: backgroundfadein 1.5s backwards;
   background-image: linear-gradient(var(--color4));
   background-repeat: no-repeat;
 

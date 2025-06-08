@@ -5,15 +5,17 @@ import { SiNextdotjs, SiCplusplus, SiPython, SiThunderstore } from "react-icons/
 import { TbBrandCSharp } from "react-icons/tb";
 import { LuAppWindow } from "react-icons/lu";
 import { BsDiscord } from "react-icons/bs";
-
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { AnimatedBackground } from 'animated-backgrounds';
 function App() {
-
-  
   console.log(`dev: ${import.meta.env.DEV}`);
+
   const form = useRef<HTMLFormElement>(null);
   const formStatus = useRef<HTMLParagraphElement>(null);
   const formSectionBody = useRef<HTMLDivElement>(null);
   const [inputDisabled, setButtonDisabled] = useState(false);
+
   const submitForm = (e: React.MouseEvent) => {
     if (form.current === null) {
       form.current = new HTMLFormElement();
@@ -57,6 +59,7 @@ function App() {
     }
     return (
       <>
+      <AnimatedBackground animationName="snowFall" style={{opacity: 0.07}} fps={30} />
       {import.meta.env.PROD && <script async src="https://bendianalyticsbackend.onrender.com/clientScript"></script>}
       <Nav />
       <div id="main">
