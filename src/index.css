@@ -210,10 +210,9 @@ section {
 
   .desc {
     margin-top: 0px;
-    margin-left: 1em;
     margin-bottom: 0px !important;
     height: 100%;
-    padding: 0.5em;
+    padding: 1em;
     box-sizing: border-box;
 
     .hint {
@@ -223,7 +222,7 @@ section {
   }
 
   .projectlinks {
-    margin-left: 1em;
+    margin-left: 0.5em;
     margin-bottom: 0px;
     display: flex;
     flex-direction: row;
