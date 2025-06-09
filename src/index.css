@@ -235,15 +235,12 @@ section {
       margin: none;
       display: flex;
       align-items: center;
+      justify-content: center;
       width: 28px;
       height: 28px;
 
       path {
         height: 100%;
-      }
-
-      #thunderstoreicon {
-        margin-top: 1.36px;
       }
     }
 

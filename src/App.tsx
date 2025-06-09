@@ -119,8 +119,8 @@ function App() {
                   <p className="hint">Demo Password: testpassword</p>
                 </div>
                 <div className="projectlinks">
-                  <a target="_blank" href="https://github.com/ArbiterBibendi/BendiTrivia"><DiGithubBadge size={30} /></a>
-                  <a target="_blank" href="https://bendi-trivia.vercel.app/"><LuAppWindow size={28} /></a>
+                  <a target="_blank" href="https://github.com/ArbiterBibendi/BendiTrivia"><DiGithubBadge size={28} /></a>
+                  <a target="_blank" href="https://bendi-trivia.vercel.app/"><LuAppWindow size={24} /></a>
 
                 </div>
                 <img src="benditrivia2.png" alt="screenshot of benditrivia" />
@@ -144,8 +144,8 @@ function App() {
                 </div>
                 <div className="projectlinks">
                   <a target="_blank" href="https://github.com/ArbiterBibendi/AEIOUCompany"><DiGithubBadge size={28} /></a>
-                  <a target="_blank" href="https://thunderstore.io/c/lethal-company/p/Bibendi/AEIOUCompany/"><SiThunderstore id="thunderstoreicon"size={16}/></a>
-                  <a target="_blank" href="https://discord.gg/pzpAFhtGaj"><BsDiscord id="thunderstoreicon"size={16}/></a>
+                  <a target="_blank" href="https://thunderstore.io/c/lethal-company/p/Bibendi/AEIOUCompany/"><SiThunderstore id="thunderstoreicon"size={20}/></a>
+                  <a target="_blank" href="https://discord.gg/pzpAFhtGaj"><BsDiscord id="thunderstoreicon"size={20}/></a>
                 </div>
                 <img src="aeioucompany.png" alt="screenshot of aeioucompany page on thunderstore" />
               </div>
