@@ -351,8 +351,7 @@ nav {
   top: 0px;
   z-index: 1;
   width: 100%;
-
-  background-image: linear-gradient(var(--color4));
+  background-image: linear-gradient(var(--color4) 100%, black 200%);
   background-repeat: no-repeat;
 
   font-weight: 500;
